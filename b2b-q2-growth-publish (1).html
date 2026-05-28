@@ -1,0 +1,856 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B2B行业Q2增长争霸赛活动</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script>window.__B2B_PUBLISH_DATA__ = {"updatedAt":"2026-05-28","accounts":[{"id":"1779883550293bdf77f714fe8e","time":"2026-05-27","optimizer":"测试","unit":"111","customerName":"111","customerUid":"111","industry1":"111","industry2":"111","openType":"漏接","openReason":"","pushReason":"","pain":"","quote":""},{"id":"17798834602660242a7ca089d48","time":"2026-05-27","optimizer":"银川开企","unit":"银川开企","customerName":"宁夏福维祥机械有限公司","customerUid":70945259,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"1779883460266f6866489a485e8","time":"2026-05-27","optimizer":"河南锐之旗徐慧霞","unit":"河南锐之旗","customerName":"郑州豫工工程机械有限公司","customerUid":52605121,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"1779883460266900a7ec99d8fa8","time":"2026-05-27","optimizer":"河北盘古刘蕾","unit":"河北盘古","customerName":"廊坊汇森保温材料有限公司","customerUid":63954763,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"1779883460266cf2e6b534484e","time":"2026-05-27","optimizer":"河南锐之旗黄飞燕","unit":"河南锐之旗","customerName":"郑州华强重工科技有限公司","customerUid":24753527,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"17798834602664435bc36230c18","time":"2026-05-27","optimizer":"沈阳盘古杨亚男","unit":"沈阳盘古","customerName":"沈阳深井潜水泵有限公司","customerUid":786751,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"17798834602663ef89f6bc61b2","time":"2026-05-27","optimizer":"南京首屏+高燕","unit":"南京首屏","customerName":"南通大鸿环保器材有限公司","customerUid":61184926,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"1779883460266c33a8b73ef2a88","time":"2026-05-27","optimizer":"河南锐之旗徐慧霞","unit":"河南锐之旗","customerName":"郑州华之强重工科技有限公司","customerUid":31860863,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"17798834602667ee451064c7798","time":"2026-05-27","optimizer":"成都百都葛曼","unit":"成都百都","customerName":"绵阳市途鑫粮油机械制造有限公司","customerUid":77871914,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"17798834602660045c17b368bf8","time":"2026-05-27","optimizer":"张锦梁","unit":"江西华邦","customerName":"九江禹科水务科技有限责任公司","customerUid":64702475,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"177988346026650b7a25c2c1ae","time":"2026-05-27","optimizer":"河南锐之旗彭珍","unit":"河南锐之旗","customerName":"河南成立粮油机械有限公司","customerUid":1997533,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"1779883460266d59d250adedc8","time":"2026-05-27","optimizer":"河南锐之旗徐慧霞","unit":"河南锐之旗","customerName":"郑州仲程环保设备有限公司","customerUid":25211975,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"177988346026668bc3fdb2df458","time":"2026-05-27","optimizer":"沈阳盘古杨亚男","unit":"沈阳盘古","customerName":"沈阳新峰塑胶有限公司","customerUid":7566690,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"1779883460266346681128f8a9","time":"2026-05-27","optimizer":"河南锐之旗徐慧霞","unit":"河南锐之旗","customerName":"郑州市同鼎机械设备有限公司","customerUid":7001509,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"1779883460266956f55936b8a7","time":"2026-05-27","optimizer":"安徽新盟","unit":"安徽新盟","customerName":"舒城县盛大气体有限责任公司","customerUid":44068762,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"1779883460266de0da6fe0845b8","time":"2026-05-27","optimizer":"山东瑞兴","unit":"山东瑞兴","customerName":"济宁市任城区新网达电子商务中心(个体工商户)","customerUid":81845384,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"1779883460266a51ebfda44b608","time":"2026-05-27","optimizer":"河南锐之旗徐慧霞","unit":"河南锐之旗","customerName":"郑州飞鸿机械设备有限公司","customerUid":7447302,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"177988346026618b8efdb5fffc","time":"2026-05-27","optimizer":"张锦梁","unit":"江西华邦","customerName":"九江恒峰园林绿化有限公司","customerUid":22355814,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"1779883460266defac2c6b9982","time":"2026-05-27","optimizer":"江苏百拓+徐凤","unit":"江苏百拓","customerName":"无锡宝杰环保科技有限公司","customerUid":81570603,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"17798834602667859a77c37d2e8","time":"2026-05-27","optimizer":"沈阳盘古杨亚男","unit":"沈阳盘古","customerName":"沈阳联科风幕空调设备制造有限公司","customerUid":31244417,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"1779883460266b96b1a3f90599","time":"2026-05-27","optimizer":"河南锐之旗徐慧霞","unit":"河南锐之旗","customerName":"河南宏科重工机械设备有限公司","customerUid":449756,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"1779883460266d419462a5737b8","time":"2026-05-27","optimizer":"青岛商至信+于晶","unit":"青岛商至信","customerName":"山东港湾电气科技有限公司","customerUid":77513789,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"漏接"},{"id":"1779883460266f7889335f5f358","time":"2026-05-27","optimizer":"河南锐之旗徐慧霞","unit":"河南锐之旗","customerName":"许昌驰诚电气有限公司","customerUid":27732453,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"177988346026608afce567c1578","time":"2026-05-27","optimizer":"潍坊中迅井庆卉","unit":"潍坊中迅","customerName":"青州市鼎科机械设备有限公司","customerUid":2641480,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"1779883460266ad5b54a4f8eca8","time":"2026-05-27","optimizer":"河北盘古曹伟娜","unit":"河北盘古","customerName":"衡水欧迈自动化设备有限公司","customerUid":52533680,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"漏接"},{"id":"1779883460266fdad56b0b33d2","time":"2026-05-27","optimizer":"河北盘古曹伟娜","unit":"河北盘古","customerName":"安平县鲲泽金属制品有限公司","customerUid":81010270,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"漏接"},{"id":"177988346026677b53c4e862c38","time":"2026-05-27","optimizer":"河南锐之旗徐慧霞","unit":"河南锐之旗","customerName":"郑州众安环保技术有限公司","customerUid":35884940,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"17798834602660639fb1843a9e8","time":"2026-05-27","optimizer":"张锦梁","unit":"江西华邦","customerName":"九江沈氏春景园林绿化有限公司","customerUid":50984090,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"17798834602665a8b66560f3388","time":"2026-05-27","optimizer":"河北盘古曹伟娜","unit":"河北盘古","customerName":"河北拓永金属丝网制品有限公司","customerUid":29976458,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"漏接"},{"id":"177988346026617aa529631c328","time":"2026-05-27","optimizer":"河北盘古杜聪","unit":"河北盘古","customerName":"河北恒泰管道装备制造有限公司","customerUid":53941208,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"1779883460266cd1bf50075cea8","time":"2026-05-27","optimizer":"河南锐之旗徐慧霞","unit":"河南锐之旗","customerName":"郑州豫工工程机械有限公司","customerUid":52533980,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"177988346026629e3cde6a40e3","time":"2026-05-27","optimizer":"重庆网润","unit":"重庆网润","customerName":"重庆天鹰起重机械有限公司","customerUid":7880915,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"全接"},{"id":"1779883460266446ef7412d7ba","time":"2026-05-27","optimizer":"杭州国技+渠道","unit":"杭州国技","customerName":"杭州广强玻璃制品有限公司","customerUid":74952572,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"漏接"},{"id":"1779883460266467af457eff048","time":"2026-05-27","optimizer":"杭州国技+渠道","unit":"杭州国技","customerName":"江苏华远路达管道科技有限公司杭州分公司","customerUid":75332373,"industry1":"","industry2":"","openReason":"","pushReason":"","pain":"","quote":"","openType":"漏接"}],"consumes":[{"id":"1779882318183502d89fee5bd8","optimizer":"何欣","unit":"华中大区","baseline":118000,"current":173000}]};<\/script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#07162e',
+            navy2: '#0b2343',
+            slatecard: '#132944',
+            gold: '#f6c85f',
+            gold2: '#ffd98a',
+            graphite: '#101214',
+            graphite2: '#1a1d21'
+          },
+          boxShadow: {
+            glow: '0 0 36px rgba(246,200,95,.18)',
+            panel: '0 18px 60px rgba(0,0,0,.35)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+      background: #07162e;
+      color: #eef4ff;
+    }
+    .grid-bg {
+      background-image:
+        linear-gradient(rgba(246,200,95,.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(246,200,95,.06) 1px, transparent 1px);
+      background-size: 42px 42px;
+    }
+    .gold-text { color: #f6c85f; text-shadow: 0 0 24px rgba(246,200,95,.22); }
+    .glass { background: linear-gradient(145deg, rgba(19,41,68,.92), rgba(10,26,49,.86)); border: 1px solid rgba(246,200,95,.16); }
+    .black-glass { background: linear-gradient(145deg, rgba(34,37,42,.94), rgba(18,20,23,.94)); border: 1px solid rgba(246,200,95,.16); }
+    .rank-1 { background: linear-gradient(90deg, rgba(246,200,95,.20), rgba(246,200,95,.04)); }
+    .rank-2 { background: linear-gradient(90deg, rgba(220,226,235,.16), rgba(220,226,235,.03)); }
+    .rank-3 { background: linear-gradient(90deg, rgba(192,132,74,.18), rgba(192,132,74,.03)); }
+    .drawer { transform: translateX(100%); transition: transform .28s ease; }
+    .drawer.open { transform: translateX(0); }
+    .modal { display: none; }
+    .modal.open { display: flex; }
+    .field {
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.08);
+      color: #fff;
+      padding: 12px 16px;
+      outline: none;
+    }
+    .field::placeholder { color: #64748b; }
+    .field:focus { border-color: rgba(246,200,95,.60); }
+    .num-rise { animation: rise 1.2s ease both; }
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 768px) {
+      .wide-table { min-width: 920px; }
+      .drawer { width: 100vw !important; }
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.left-0{left:0px}.right-0{right:0px}.top-0{top:0px}.z-10{z-index:10}.z-40{z-index:40}.z-50{z-index:50}.z-\[60\]{z-index:60}.-mx-5{margin-left:-1.25rem;margin-right:-1.25rem}.mx-auto{margin-left:auto;margin-right:auto}.-mt-5{margin-top:-1.25rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mt-1{margin-top:0.25rem}.mt-10{margin-top:2.5rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-8{margin-top:2rem}.mt-3{margin-top:0.75rem}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-3{height:0.75rem}.h-72{height:18rem}.h-screen{height:100vh}.h-7{height:1.75rem}.max-h-\[92vh\]{max-height:92vh}.w-3{width:0.75rem}.w-\[92vw\]{width:92vw}.w-full{width:100%}.min-w-7{min-width:1.75rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-6xl{max-width:72rem}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.max-w-\[220px\]{max-width:220px}.flex-1{flex:1 1 0%}.cursor-pointer{cursor:pointer}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-8{gap:2rem}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-l{border-left-width:1px}.border-t{border-top-width:1px}.border-gold\/20{border-color:rgb(246 200 95 / 0.2)}.border-gold\/30{border-color:rgb(246 200 95 / 0.3)}.border-red-400\/30{border-color:rgb(248 113 113 / 0.3)}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/\[0\.08\]{border-color:rgb(255 255 255 / 0.08)}.bg-\[\#080b10\]{--tw-bg-opacity:1;background-color:rgb(8 11 16 / var(--tw-bg-opacity, 1))}.bg-\[\#0b1d38\]{--tw-bg-opacity:1;background-color:rgb(11 29 56 / var(--tw-bg-opacity, 1))}.bg-\[\#0c1118\]{--tw-bg-opacity:1;background-color:rgb(12 17 24 / var(--tw-bg-opacity, 1))}.bg-\[\#0c1118\]\/95{background-color:rgb(12 17 24 / 0.95)}.bg-\[\#111827\]{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity, 1))}.bg-black\/70{background-color:rgb(0 0 0 / 0.7)}.bg-gold{--tw-bg-opacity:1;background-color:rgb(246 200 95 / var(--tw-bg-opacity, 1))}.bg-gold\/10{background-color:rgb(246 200 95 / 0.1)}.bg-gold\/15{background-color:rgb(246 200 95 / 0.15)}.bg-graphite{--tw-bg-opacity:1;background-color:rgb(16 18 20 / var(--tw-bg-opacity, 1))}.bg-navy{--tw-bg-opacity:1;background-color:rgb(7 22 46 / var(--tw-bg-opacity, 1))}.bg-red-400\/10{background-color:rgb(248 113 113 / 0.1)}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/5{background-color:rgb(255 255 255 / 0.05)}.bg-white\/\[0\.08\]{background-color:rgb(255 255 255 / 0.08)}.bg-\[\#c0844a\]{--tw-bg-opacity:1;background-color:rgb(192 132 74 / var(--tw-bg-opacity, 1))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.bg-red-400\/15{background-color:rgb(248 113 113 / 0.15)}.bg-\[radial-gradient\(circle_at_70\%_15\%\2c rgba\(246\2c 200\2c 95\2c \.18\)\2c transparent_34\%\)\2c linear-gradient\(120deg\2c rgba\(7\2c 22\2c 46\2c \.95\)\2c rgba\(9\2c 33\2c 63\2c \.92\)\)\]{background-image:radial-gradient(circle at 70% 15%,rgba(246,200,95,.18),transparent 34%),linear-gradient(120deg,rgba(7,22,46,.95),rgba(9,33,63,.92))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-\[\#0d1524\]{--tw-gradient-from:#0d1524 var(--tw-gradient-from-position);--tw-gradient-to:rgb(13 21 36 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-\[\#1f2630\]{--tw-gradient-to:rgb(31 38 48 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #1f2630 var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-\[\#0f1115\]{--tw-gradient-to:#0f1115 var(--tw-gradient-to-position)}.p-1{padding:0.25rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-14{padding-top:3.5rem;padding-bottom:3.5rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-16{padding-bottom:4rem}.pt-14{padding-top:3.5rem}.pt-24{padding-top:6rem}.text-left{text-align:left}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-semibold{font-weight:600}.leading-tight{line-height:1.25}.tracking-wide{letter-spacing:0.025em}.text-gold{--tw-text-opacity:1;color:rgb(246 200 95 / var(--tw-text-opacity, 1))}.text-gold2{--tw-text-opacity:1;color:rgb(255 217 138 / var(--tw-text-opacity, 1))}.text-graphite{--tw-text-opacity:1;color:rgb(16 18 20 / var(--tw-text-opacity, 1))}.text-navy{--tw-text-opacity:1;color:rgb(7 22 46 / var(--tw-text-opacity, 1))}.text-red-200{--tw-text-opacity:1;color:rgb(254 202 202 / var(--tw-text-opacity, 1))}.text-red-300{--tw-text-opacity:1;color:rgb(252 165 165 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.opacity-60{opacity:0.6}.shadow-glow{--tw-shadow:0 0 36px rgba(246,200,95,.18);--tw-shadow-colored:0 0 36px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-panel{--tw-shadow:0 18px 60px rgba(0,0,0,.35);--tw-shadow-colored:0 18px 60px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.placeholder\:text-slate-500::placeholder{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.hover\:bg-gold\/20:hover{background-color:rgb(246 200 95 / 0.2)}.hover\:bg-white\/10:hover{background-color:rgb(255 255 255 / 0.1)}.hover\:bg-white\/\[0\.12\]:hover{background-color:rgb(255 255 255 / 0.12)}.focus\:border-gold\/60:focus{border-color:rgb(246 200 95 / 0.6)}@media (min-width: 768px){.md\:col-span-2{grid-column:span 2 / span 2}.md\:flex{display:flex}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:grid-cols-\[1fr_\.9fr\]{grid-template-columns:1fr .9fr}.md\:grid-cols-\[1fr_auto_auto_auto\]{grid-template-columns:1fr auto auto auto}.md\:flex-row{flex-direction:row}.md\:items-end{align-items:flex-end}.md\:items-center{align-items:center}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-6xl{font-size:3.75rem;line-height:1}}@media (min-width: 1024px){.lg\:col-span-2{grid-column:span 2 / span 2}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-\[1\.2fr_\.8fr\]{grid-template-columns:1.2fr .8fr}}</style></head>
+<body>
+  <nav class="fixed top-0 left-0 right-0 z-40 border-b border-white/10 bg-[#07162e]/86 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
+      <div class="flex items-center gap-3">
+        <span class="h-3 w-3 rounded-full bg-gold shadow-glow"></span>
+        <span class="font-semibold tracking-wide">B2B Q2 增长争霸赛</span>
+      </div>
+      <div class="hidden items-center gap-2 md:flex">
+        <a class="rounded px-3 py-2 text-sm text-slate-200 hover:bg-white/10" href="#account">账户数赛道</a>
+        <a class="rounded px-3 py-2 text-sm text-slate-200 hover:bg-white/10" href="#accountRank">账户排行榜</a>
+        <a class="rounded px-3 py-2 text-sm text-slate-200 hover:bg-white/10" href="#consume">消费增长赛道</a>
+        <a class="rounded px-3 py-2 text-sm text-slate-200 hover:bg-white/10" href="#consumeRank">消费排行榜</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="grid-bg relative overflow-hidden bg-navy pt-24">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_15%,rgba(246,200,95,.18),transparent_34%),linear-gradient(120deg,rgba(7,22,46,.95),rgba(9,33,63,.92))]"></div>
+    <div class="relative mx-auto grid max-w-7xl gap-8 px-4 pb-16 pt-14 lg:grid-cols-[1.2fr_.8fr]">
+      <div>
+        <div class="mb-5 inline-flex items-center gap-2 rounded border border-gold/30 bg-gold/10 px-3 py-2 text-sm text-gold2">TOP100 · 增长冠军 · 冲榜中</div>
+        <h1 class="max-w-4xl text-4xl font-black leading-tight text-white md:text-6xl">B2B行业Q2增长争霸赛</h1>
+        <p class="mt-5 text-xl font-semibold text-gold2 md:text-2xl">增长有奖 · 冲榜赢好礼</p>
+        <div class="mt-8 flex flex-wrap gap-3 text-sm text-slate-200">
+          <span class="rounded border border-white/10 bg-white/5 px-4 py-2">活动时间：2026.05.18 - 2026.06.30</span>
+          <span class="rounded border border-white/10 bg-white/5 px-4 py-2">当前更新时间：<b id="updatedAt">2026-05-27</b></span>
+        </div>
+      </div>
+      <div class="glass rounded-lg p-5 shadow-panel">
+        <div class="mb-4 flex items-center justify-between">
+          <span class="text-sm text-slate-300">实时竞赛总览</span>
+          <span class="rounded bg-gold/15 px-2 py-1 text-xs font-semibold text-gold">LIVE</span>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div class="rounded bg-white/5 p-4">
+            <p class="text-xs text-slate-400">账户赛道积分</p>
+            <p id="heroAccountScore" class="mt-2 text-3xl font-black gold-text">2,770</p>
+          </div>
+          <div class="rounded bg-white/5 p-4">
+            <p class="text-xs text-slate-400">消费增长金额</p>
+            <p id="heroConsumeGrowth" class="mt-2 text-3xl font-black gold-text">↑ 55,000</p>
+          </div>
+          <div class="rounded bg-white/5 p-4">
+            <p class="text-xs text-slate-400">参与优化师</p>
+            <p id="heroPeople" class="mt-2 text-3xl font-black gold-text">19</p>
+          </div>
+          <div class="rounded bg-white/5 p-4">
+            <p class="text-xs text-slate-400">榜单数据</p>
+            <p class="mt-2 text-3xl font-black gold-text">TOP100</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="account" class="bg-navy px-4 py-14">
+      <div class="mx-auto max-w-7xl">
+        <div class="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+          <div>
+            <p class="text-sm font-semibold text-gold">语音智能体开户赛道</p>
+            <h2 class="mt-2 text-3xl font-black md:text-4xl">账户数增长赛道</h2>
+            <p class="mt-2 text-slate-300">新增智能体客户数争霸榜</p>
+          </div>
+          
+        </div>
+
+        <div id="accountStats" class="mt-8 grid gap-4 md:grid-cols-4">
+        <div class="glass rounded-lg p-5 shadow-glow">
+          <p class="text-sm text-slate-300">新增文字版账户数</p>
+          <p class="mt-3 text-3xl font-black gold-text num-rise">0</p>
+        </div>
+        <div class="glass rounded-lg p-5 shadow-glow">
+          <p class="text-sm text-slate-300">新增漏接账户数</p>
+          <p class="mt-3 text-3xl font-black gold-text num-rise">7</p>
+        </div>
+        <div class="glass rounded-lg p-5 shadow-glow">
+          <p class="text-sm text-slate-300">新增全接账户数</p>
+          <p class="mt-3 text-3xl font-black gold-text num-rise">27</p>
+        </div>
+        <div class="glass rounded-lg p-5 shadow-glow">
+          <p class="text-sm text-slate-300">参与优化师人数</p>
+          <p class="mt-3 text-3xl font-black gold-text num-rise">19</p>
+        </div></div>
+
+        <div class="mt-8 grid gap-3 md:grid-cols-3">
+          <a href="#accountRank" class="rounded-lg border border-gold/20 bg-gold px-6 py-5 text-center font-black text-navy shadow-glow">查看排行榜</a>
+          <a href="#accountInsight" class="rounded-lg border border-white/10 bg-white/[0.08] px-6 py-5 text-center font-black text-white hover:bg-white/[0.12]">增长洞察</a>
+          
+        </div>
+
+        <div id="accountRank" class="mt-10 glass rounded-lg p-5 shadow-panel">
+          <div class="mb-5 flex flex-col justify-between gap-3 md:flex-row md:items-center">
+            <div>
+              <h3 class="text-2xl font-black">账户数赛道TOP100</h3>
+              <p class="mt-1 text-sm text-slate-300">积分规则：文字版 ×1 · 漏接 ×10 · 全接 ×100</p>
+            </div>
+            <span class="rounded bg-gold/15 px-3 py-2 text-sm font-semibold text-gold">自动排序</span>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="wide-table w-full text-left text-sm">
+              <thead class="bg-white/6 text-slate-300">
+                <tr>
+                  <th class="p-3">排名</th><th class="p-3">优化师</th><th class="p-3">运营单位</th><th class="p-3">文字版数量</th><th class="p-3">漏接数量</th><th class="p-3">全接数量</th><th class="p-3">总积分</th>
+                </tr>
+              </thead>
+              <tbody id="accountRankBody">
+        <tr class="border-t border-white/[0.08] rank-1">
+          <td class="p-3"><span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black bg-gold text-navy">1</span></td><td class="p-3 font-semibold">河南锐之旗徐慧霞</td><td class="p-3">河南锐之旗</td>
+          <td class="p-3">0</td><td class="p-3">0</td><td class="p-3">9</td><td class="p-3 font-black text-gold">900</td>
+        </tr>
+        <tr class="border-t border-white/[0.08] rank-2">
+          <td class="p-3"><span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black bg-slate-200 text-slate-900">2</span></td><td class="p-3 font-semibold">沈阳盘古杨亚男</td><td class="p-3">沈阳盘古</td>
+          <td class="p-3">0</td><td class="p-3">0</td><td class="p-3">3</td><td class="p-3 font-black text-gold">300</td>
+        </tr>
+        <tr class="border-t border-white/[0.08] rank-3">
+          <td class="p-3"><span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black bg-[#c0844a] text-white">3</span></td><td class="p-3 font-semibold">张锦梁</td><td class="p-3">江西华邦</td>
+          <td class="p-3">0</td><td class="p-3">0</td><td class="p-3">3</td><td class="p-3 font-black text-gold">300</td>
+        </tr>
+        <tr class="border-t border-white/[0.08] ">
+          <td class="p-3"><span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black bg-white/10 text-slate-200">4</span></td><td class="p-3 font-semibold">银川开企</td><td class="p-3">银川开企</td>
+          <td class="p-3">0</td><td class="p-3">0</td><td class="p-3">1</td><td class="p-3 font-black text-gold">100</td>
+        </tr>
+        <tr class="border-t border-white/[0.08] ">
+          <td class="p-3"><span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black bg-white/10 text-slate-200">5</span></td><td class="p-3 font-semibold">河北盘古刘蕾</td><td class="p-3">河北盘古</td>
+          <td class="p-3">0</td><td class="p-3">0</td><td class="p-3">1</td><td class="p-3 font-black text-gold">100</td>
+        </tr>
+        <tr class="border-t border-white/[0.08] ">
+          <td class="p-3"><span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black bg-white/10 text-slate-200">6</span></td><td class="p-3 font-semibold">河南锐之旗黄飞燕</td><td class="p-3">河南锐之旗</td>
+          <td class="p-3">0</td><td class="p-3">0</td><td class="p-3">1</td><td class="p-3 font-black text-gold">100</td>
+        </tr>
+        <tr class="border-t border-white/[0.08] ">
+          <td class="p-3"><span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black bg-white/10 text-slate-200">7</span></td><td class="p-3 font-semibold">南京首屏+高燕</td><td class="p-3">南京首屏</td>
+          <td class="p-3">0</td><td class="p-3">0</td><td class="p-3">1</td><td class="p-3 font-black text-gold">100</td>
+        </tr>
+        <tr class="border-t border-white/[0.08] ">
+          <td class="p-3"><span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black bg-white/10 text-slate-200">8</span></td><td class="p-3 font-semibold">成都百都葛曼</td><td class="p-3">成都百都</td>
+          <td class="p-3">0</td><td class="p-3">0</td><td class="p-3">1</td><td class="p-3 font-black text-gold">100</td>
+        </tr>
+        <tr class="border-t border-white/[0.08] ">
+          <td class="p-3"><span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black bg-white/10 text-slate-200">9</span></td><td class="p-3 font-semibold">河南锐之旗彭珍</td><td class="p-3">河南锐之旗</td>
+          <td class="p-3">0</td><td class="p-3">0</td><td class="p-3">1</td><td class="p-3 font-black text-gold">100</td>
+        </tr>
+        <tr class="border-t border-white/[0.08] ">
+          <td class="p-3"><span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black bg-white/10 text-slate-200">10</span></td><td class="p-3 font-semibold">安徽新盟</td><td class="p-3">安徽新盟</td>
+          <td class="p-3">0</td><td class="p-3">0</td><td class="p-3">1</td><td class="p-3 font-black text-gold">100</td>
+        </tr>
+        <tr class="border-t border-white/[0.08] ">
+          <td class="p-3"><span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black bg-white/10 text-slate-200">11</span></td><td class="p-3 font-semibold">山东瑞兴</td><td class="p-3">山东瑞兴</td>
+          <td class="p-3">0</td><td class="p-3">0</td><td class="p-3">1</td><td class="p-3 font-black text-gold">100</td>
+        </tr>
+        <tr class="border-t border-white/[0.08] ">
+          <td class="p-3"><span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black bg-white/10 text-slate-200">12</span></td><td class="p-3 font-semibold">江苏百拓+徐凤</td><td class="p-3">江苏百拓</td>
+          <td class="p-3">0</td><td class="p-3">0</td><td class="p-3">1</td><td class="p-3 font-black text-gold">100</td>
+        </tr>
+        <tr class="border-t border-white/[0.08] ">
+          <td class="p-3"><span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black bg-white/10 text-slate-200">13</span></td><td class="p-3 font-semibold">潍坊中迅井庆卉</td><td class="p-3">潍坊中迅</td>
+          <td class="p-3">0</td><td class="p-3">0</td><td class="p-3">1</td><td class="p-3 font-black text-gold">100</td>
+        </tr>
+        <tr class="border-t border-white/[0.08] ">
+          <td class="p-3"><span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black bg-white/10 text-slate-200">14</span></td><td class="p-3 font-semibold">河北盘古杜聪</td><td class="p-3">河北盘古</td>
+          <td class="p-3">0</td><td class="p-3">0</td><td class="p-3">1</td><td class="p-3 font-black text-gold">100</td>
+        </tr>
+        <tr class="border-t border-white/[0.08] ">
+          <td class="p-3"><span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black bg-white/10 text-slate-200">15</span></td><td class="p-3 font-semibold">重庆网润</td><td class="p-3">重庆网润</td>
+          <td class="p-3">0</td><td class="p-3">0</td><td class="p-3">1</td><td class="p-3 font-black text-gold">100</td>
+        </tr>
+        <tr class="border-t border-white/[0.08] ">
+          <td class="p-3"><span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black bg-white/10 text-slate-200">16</span></td><td class="p-3 font-semibold">河北盘古曹伟娜</td><td class="p-3">河北盘古</td>
+          <td class="p-3">0</td><td class="p-3">3</td><td class="p-3">0</td><td class="p-3 font-black text-gold">30</td>
+        </tr>
+        <tr class="border-t border-white/[0.08] ">
+          <td class="p-3"><span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black bg-white/10 text-slate-200">17</span></td><td class="p-3 font-semibold">杭州国技+渠道</td><td class="p-3">杭州国技</td>
+          <td class="p-3">0</td><td class="p-3">2</td><td class="p-3">0</td><td class="p-3 font-black text-gold">20</td>
+        </tr>
+        <tr class="border-t border-white/[0.08] ">
+          <td class="p-3"><span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black bg-white/10 text-slate-200">18</span></td><td class="p-3 font-semibold">测试</td><td class="p-3">111</td>
+          <td class="p-3">0</td><td class="p-3">1</td><td class="p-3">0</td><td class="p-3 font-black text-gold">10</td>
+        </tr>
+        <tr class="border-t border-white/[0.08] ">
+          <td class="p-3"><span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black bg-white/10 text-slate-200">19</span></td><td class="p-3 font-semibold">青岛商至信+于晶</td><td class="p-3">青岛商至信</td>
+          <td class="p-3">0</td><td class="p-3">1</td><td class="p-3">0</td><td class="p-3 font-black text-gold">10</td>
+        </tr></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="accountInsight" class="mt-10">
+          <div class="mb-5">
+            <h3 class="text-2xl font-black">账户数增长洞察</h3>
+            <p class="mt-1 text-sm text-slate-300">基于提报明细和导入明细实时生成</p>
+          </div>
+          <div class="grid gap-4 lg:grid-cols-3">
+            <div class="glass rounded-lg p-4"><h4 class="mb-3 font-bold text-gold">客户开通原因TOP</h4><div id="chartAccountReason" class="h-72" _echarts_instance_="ec_1779941780651" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;"><div style="position: relative; width: 382px; height: 288px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="382" height="288" style="position: absolute; left: 0px; top: 0px; width: 382px; height: 288px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class=""></div></div></div>
+            <div class="glass rounded-lg p-4"><h4 class="mb-3 font-bold text-gold">客户痛点TOP</h4><div id="chartAccountPain" class="h-72" _echarts_instance_="ec_1779941780652" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;"><div style="position: relative; width: 382px; height: 288px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="382" height="288" style="position: absolute; left: 0px; top: 0px; width: 382px; height: 288px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class=""></div></div></div>
+            <div class="glass rounded-lg p-4"><h4 class="mb-3 font-bold text-gold">行业分布</h4><div id="chartAccountIndustry" class="h-72" _echarts_instance_="ec_1779941780653" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;"><div style="position: relative; width: 382px; height: 288px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="382" height="288" style="position: absolute; left: 0px; top: 0px; width: 382px; height: 288px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class=""></div></div></div>
+            <div class="glass rounded-lg p-4"><h4 class="mb-3 font-bold text-gold">运营单位分布</h4><div id="chartAccountUnit" class="h-72" _echarts_instance_="ec_1779941780654" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;"><div style="position: relative; width: 382px; height: 288px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="382" height="288" style="position: absolute; left: 0px; top: 0px; width: 382px; height: 288px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class=""></div></div></div>
+            <div class="glass rounded-lg p-4 lg:col-span-2"><h4 class="mb-3 font-bold text-gold">开通模式分布</h4><div id="chartAccountType" class="h-72" _echarts_instance_="ec_1779941780655" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;"><div style="position: relative; width: 814px; height: 288px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="814" height="288" style="position: absolute; left: 0px; top: 0px; width: 814px; height: 288px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class=""></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative overflow-hidden bg-gradient-to-r from-[#0d1524] via-[#1f2630] to-[#0f1115] px-4 py-16">
+      <div class="absolute inset-0 grid-bg opacity-60"></div>
+      <div class="relative mx-auto grid max-w-7xl items-center gap-8 md:grid-cols-[1fr_.9fr]">
+        <div>
+          <p class="text-sm font-semibold text-gold">第二赛道已开启</p>
+          <h2 class="mt-2 text-4xl font-black md:text-5xl">消费增长赛道</h2>
+          <p class="mt-4 text-lg text-slate-200">冲刺增长目标 · 排行榜实时更新</p>
+        </div>
+        <div class="grid grid-cols-3 gap-3">
+          <div class="black-glass rounded-lg p-5 text-center"><p class="text-xs text-slate-400">增长金额</p><p id="dividerGrowth" class="mt-2 text-3xl font-black gold-text num-rise">↑ 55,000</p></div>
+          <div class="black-glass rounded-lg p-5 text-center"><p class="text-xs text-slate-400">冲榜席位</p><p class="mt-2 text-3xl font-black gold-text num-rise">100</p></div>
+          <div class="black-glass rounded-lg p-5 text-center"><p class="text-xs text-slate-400">实时刷新</p><p class="mt-2 text-3xl font-black gold-text num-rise">LIVE</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="consume" class="bg-graphite px-4 py-14">
+      <div class="mx-auto max-w-7xl">
+        <div class="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+          <div>
+            <p class="text-sm font-semibold text-gold">智能体消费增长争霸榜</p>
+            <h2 class="mt-2 text-3xl font-black md:text-4xl">消费增长赛道</h2>
+            <p class="mt-2 text-slate-300">以增长金额为主排序，支持切换增长率榜</p>
+          </div>
+          
+        </div>
+
+        <div id="consumeStats" class="mt-8 grid gap-4 md:grid-cols-4">
+        <div class="black-glass rounded-lg p-5 shadow-glow">
+          <p class="text-sm text-slate-300">总基线消费</p>
+          <p class="mt-3 text-3xl font-black gold-text num-rise">118,000</p>
+        </div>
+        <div class="black-glass rounded-lg p-5 shadow-glow">
+          <p class="text-sm text-slate-300">总当前消费</p>
+          <p class="mt-3 text-3xl font-black gold-text num-rise">173,000</p>
+        </div>
+        <div class="black-glass rounded-lg p-5 shadow-glow">
+          <p class="text-sm text-slate-300">总增长金额</p>
+          <p class="mt-3 text-3xl font-black gold-text num-rise">↑ 55,000</p>
+        </div>
+        <div class="black-glass rounded-lg p-5 shadow-glow">
+          <p class="text-sm text-slate-300">平均增长率</p>
+          <p class="mt-3 text-3xl font-black gold-text num-rise">46.6%</p>
+        </div></div>
+
+        <div class="mt-8 grid gap-3 md:grid-cols-3">
+          <a href="#consumeRank" class="rounded-lg border border-gold/20 bg-gold px-6 py-5 text-center font-black text-graphite shadow-glow">查看排行榜</a>
+          <a href="#consumeInsight" class="rounded-lg border border-white/10 bg-white/[0.08] px-6 py-5 text-center font-black text-white hover:bg-white/[0.12]">增长洞察</a>
+          
+        </div>
+
+        <div id="consumeRank" class="mt-10 black-glass rounded-lg p-5 shadow-panel">
+          <div class="mb-5 flex flex-col justify-between gap-3 md:flex-row md:items-center">
+            <div>
+              <h3 class="text-2xl font-black">消费增长TOP100</h3>
+              <p class="mt-1 text-sm text-slate-300">增长金额 = 当前消费 - 4月基线消费</p>
+            </div>
+            <div class="flex rounded border border-white/10 p-1">
+              <button id="sortAmountBtn" onclick="setConsumeSort('amount')" class="rounded px-3 py-2 text-sm font-semibold bg-gold text-graphite">按增长金额排序</button>
+              <button id="sortRateBtn" onclick="setConsumeSort('rate')" class="rounded px-3 py-2 text-sm font-semibold text-slate-300">按增长率排序</button>
+            </div>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="wide-table w-full text-left text-sm">
+              <thead class="bg-white/6 text-slate-300">
+                <tr>
+                  <th class="p-3">排名</th><th class="p-3">优化师</th><th class="p-3">运营单位</th><th class="p-3">4月基线消费</th><th class="p-3">当前消费</th><th class="p-3">增长金额</th><th class="p-3">增长率</th>
+                </tr>
+              </thead>
+              <tbody id="consumeRankBody">
+        <tr class="border-t border-white/[0.08] rank-1">
+          <td class="p-3"><span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black bg-gold text-navy">1</span></td><td class="p-3 font-semibold">何欣</td><td class="p-3">华中大区</td>
+          <td class="p-3">118,000</td><td class="p-3">173,000</td><td class="p-3 font-black text-gold">↑ 55,000</td><td class="p-3 text-gold">46.6%</td>
+        </tr></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="consumeInsight" class="mt-10">
+          <div class="mb-5">
+            <h3 class="text-2xl font-black">消费增长洞察</h3>
+            <p class="mt-1 text-sm text-slate-300">基于消费数据实时刷新</p>
+          </div>
+          <div class="grid gap-4 lg:grid-cols-3">
+            <div class="black-glass rounded-lg p-4"><h4 class="mb-3 font-bold text-gold">运营单位增长分布</h4><div id="chartConsumeUnit" class="h-72" _echarts_instance_="ec_1779941780656" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;"><div style="position: relative; width: 382px; height: 288px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="382" height="288" style="position: absolute; left: 0px; top: 0px; width: 382px; height: 288px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class=""></div></div></div>
+            <div class="black-glass rounded-lg p-4"><h4 class="mb-3 font-bold text-gold">TOP增长优化师</h4><div id="chartConsumeTop" class="h-72" _echarts_instance_="ec_1779941780657" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;"><div style="position: relative; width: 382px; height: 288px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="382" height="288" style="position: absolute; left: 0px; top: 0px; width: 382px; height: 288px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class=""></div></div></div>
+            <div class="black-glass rounded-lg p-4"><h4 class="mb-3 font-bold text-gold">增长率分布</h4><div id="chartConsumeRate" class="h-72" _echarts_instance_="ec_1779941780658" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;"><div style="position: relative; width: 382px; height: 288px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="382" height="288" style="position: absolute; left: 0px; top: 0px; width: 382px; height: 288px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class=""></div></div></div>
+            <div class="black-glass rounded-lg p-4"><h4 class="mb-3 font-bold text-gold">消费结构分析</h4><div id="chartConsumeStructure" class="h-72" _echarts_instance_="ec_1779941780659" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;"><div style="position: relative; width: 382px; height: 288px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="382" height="288" style="position: absolute; left: 0px; top: 0px; width: 382px; height: 288px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class=""></div></div></div>
+            <div class="black-glass rounded-lg p-4 lg:col-span-2"><h4 class="mb-3 font-bold text-gold">趋势分析</h4><div id="chartConsumeTrend" class="h-72" _echarts_instance_="ec_1779941780660" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;"><div style="position: relative; width: 814px; height: 288px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="814" height="288" style="position: absolute; left: 0px; top: 0px; width: 814px; height: 288px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class=""></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 bg-[#080b10] px-4 py-8 text-center text-sm text-slate-400">
+    B2B行业Q2增长争霸赛活动 · 离线 Excel 管理版，数据保存在当前浏览器
+  </footer>
+
+  <script>
+    const ADMIN_PASSWORD = 'admin123';
+    const accountKey = 'b2b_q2_account_records_v1';
+    const consumeKey = 'b2b_q2_consume_records_v1';
+    const FORCE_OFFLINE = true;
+    const apiBase = '';
+    const state = { accounts: [], consumes: [], updatedAt: '', backend: false, source: 'local' };
+    const embeddedData = window.__B2B_PUBLISH_DATA__ || null;
+    let pendingAdmin = 'account';
+    let activeAdmin = 'account';
+    let consumeSort = 'amount';
+    let editing = null;
+    const money = n => Number(n || 0).toLocaleString('zh-CN', { maximumFractionDigits: 0 });
+    const percent = n => `${(Number(n || 0) * 100).toFixed(1)}%`;
+    const today = () => {
+      const d = new Date();
+      const pad = v => String(v).padStart(2, '0');
+      return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+    };
+    const uid = () => `${Date.now()}${Math.random().toString(16).slice(2)}`;
+
+    const sampleAccounts = [
+      ['张一鸣','华东大区','星河制造','C10001','工业制造','装备制造','全接','提效降本','高层推动','线索响应慢','希望把电话漏接降下来'],
+      ['李娜','华南大区','蓝海教育','C10002','教育培训','职业教育','漏接','提升接通','活动冲刺','夜间无人接','晚间咨询容易流失'],
+      ['王强','华北大区','云启软件','C10003','企业服务','SaaS','文字版','试点验证','客户主动','销售跟进不及时','先用文字版看效果'],
+      ['赵敏','华东大区','金石建材','C10004','房产家居','建材','全接','承接高峰','优化师推动','咨询峰值明显','大促期间电话接不过来'],
+      ['陈晨','西南大区','启明医疗','C10005','医疗健康','医美','漏接','补齐服务','数据复盘','咨询排队长','客户不想等太久'],
+      ['刘洋','华南大区','远帆物流','C10006','物流运输','货运','文字版','低成本试用','竞品对标','客户问题重复','先沉淀标准回复'],
+      ['周舟','华北大区','丰年农业','C10007','农林牧渔','农资','全接','旺季保障','老板关注','旺季咨询暴增','不能错过高意向客户'],
+      ['孙悦','华东大区','信达财税','C10008','企业服务','财税服务','漏接','减少漏接','月度复盘','电话占线','需要自动接待']
+    ].map(x => ({ id: uid(), time: today(), optimizer: x[0], unit: x[1], customerName: x[2], customerUid: x[3], industry1: x[4], industry2: x[5], openType: x[6], openReason: x[7], pushReason: x[8], pain: x[9], quote: x[10] }));
+
+    const sampleConsumes = [
+      ['张一鸣','华东大区',180000,268000], ['李娜','华南大区',135000,201000], ['王强','华北大区',92000,153000],
+      ['赵敏','华东大区',210000,287000], ['陈晨','西南大区',76000,112000], ['刘洋','华南大区',128000,171000],
+      ['周舟','华北大区',96000,149000], ['孙悦','华东大区',152000,205000], ['吴迪','西北大区',65000,98000], ['何欣','华中大区',118000,173000]
+    ].map(x => ({ id: uid(), optimizer: x[0], unit: x[1], baseline: x[2], current: x[3] }));
+
+    function getAccounts() { return state.accounts.length ? state.accounts : sampleAccounts; }
+    function getConsumes() { return state.consumes.length ? state.consumes : sampleConsumes; }
+    async function saveAccounts(data) {
+      state.accounts = data;
+      touch();
+      localStorage.setItem(accountKey, JSON.stringify(data));
+      renderAll();
+      await syncBackend('/api/accounts', { accounts: data });
+    }
+    async function saveConsumes(data) {
+      state.consumes = data;
+      touch();
+      localStorage.setItem(consumeKey, JSON.stringify(data));
+      renderAll();
+      await syncBackend('/api/consumes', { consumes: data });
+    }
+    function touch() {
+      state.updatedAt = today();
+      localStorage.setItem('b2b_q2_updated_at', state.updatedAt);
+    }
+    async function syncBackend(url, body) {
+      if (FORCE_OFFLINE || location.protocol === 'file:') return;
+      try {
+        const res = await fetch(apiBase + url, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body)
+        });
+        if (!res.ok) throw new Error('sync failed');
+        const data = await res.json();
+        state.accounts = data.accounts || state.accounts;
+        state.consumes = data.consumes || state.consumes;
+        state.updatedAt = data.updatedAt || state.updatedAt;
+        state.source = data.source || state.source;
+        state.backend = true;
+        renderAll();
+      } catch (error) {
+        state.backend = false;
+        console.warn('后端同步失败，已暂存到当前浏览器。', error);
+      }
+    }
+
+    async function loadData() {
+      if (embeddedData) {
+        state.accounts = embeddedData.accounts || sampleAccounts;
+        state.consumes = embeddedData.consumes || sampleConsumes;
+        state.updatedAt = embeddedData.updatedAt || today();
+        state.source = 'embedded';
+        state.backend = false;
+        return;
+      }
+      if (!FORCE_OFFLINE && location.protocol !== 'file:') {
+        try {
+          const res = await fetch(apiBase + '/api/data', { cache: 'no-store' });
+          if (!res.ok) throw new Error('load failed');
+          const data = await res.json();
+          state.accounts = data.accounts || [];
+          state.consumes = data.consumes || [];
+          state.updatedAt = data.updatedAt || today();
+          state.source = data.source || 'server';
+          state.backend = true;
+          return;
+        } catch (error) {
+          console.warn('后端连接失败，使用当前浏览器本地数据。', error);
+        }
+      }
+      state.accounts = JSON.parse(localStorage.getItem(accountKey) || 'null') || sampleAccounts;
+      state.consumes = JSON.parse(localStorage.getItem(consumeKey) || 'null') || sampleConsumes;
+      state.updatedAt = localStorage.getItem('b2b_q2_updated_at') || today();
+      state.source = 'local';
+      state.backend = false;
+    }
+
+    async function init() {
+      document.querySelectorAll('.field').forEach(el => el.classList.add('rounded','border','border-white/10','bg-white/[0.08]','px-4','py-3','text-white','placeholder:text-slate-500','outline-none','focus:border-gold/60'));
+      document.getElementById('reportForm').addEventListener('submit', submitReport);
+      await loadData();
+      applyDataSourceMode();
+      renderAll();
+      ensureChartsReady();
+      window.addEventListener('resize', () => setTimeout(renderCharts, 100));
+    }
+
+    function applyDataSourceMode() {
+      if (!['feishu', 'embedded'].includes(state.source)) return;
+      document.querySelectorAll('button[onclick^="openAdmin"], button[onclick="openReportModal()"]').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('a[href="#accountRank"], a[href="#consumeRank"]').forEach(el => {
+        if (el.textContent.includes('查看排行榜')) el.classList.add('md:col-span-2');
+      });
+    }
+
+    function accountRank() {
+      const map = new Map();
+      getAccounts().forEach(r => {
+        const key = `${r.optimizer}|${r.unit}`;
+        if (!map.has(key)) map.set(key, { optimizer: r.optimizer, unit: r.unit, text: 0, missed: 0, full: 0, score: 0 });
+        const row = map.get(key);
+        if (r.openType === '全接') row.full += 1;
+        else if (r.openType === '漏接') row.missed += 1;
+        else row.text += 1;
+        row.score = row.text + row.missed * 10 + row.full * 100;
+      });
+      return [...map.values()].sort((a,b) => b.score - a.score).slice(0,100);
+    }
+
+    function consumeRows() {
+      return getConsumes().map(r => {
+        const growth = Number(r.current || 0) - Number(r.baseline || 0);
+        return { ...r, growth, rate: Number(r.baseline || 0) ? growth / Number(r.baseline || 0) : 0 };
+      });
+    }
+    function consumeRank() {
+      return consumeRows().sort((a,b) => consumeSort === 'amount' ? b.growth - a.growth : b.rate - a.rate).slice(0,100);
+    }
+
+    function renderStats() {
+      const accounts = getAccounts();
+      const aRank = accountRank();
+      const text = accounts.filter(r => r.openType === '文字版').length;
+      const missed = accounts.filter(r => r.openType === '漏接').length;
+      const full = accounts.filter(r => r.openType === '全接').length;
+      const people = new Set(accounts.map(r => r.optimizer)).size;
+      statCards('accountStats', [
+        ['新增文字版账户数', text], ['新增漏接账户数', missed], ['新增全接账户数', full], ['参与优化师人数', people]
+      ], 'glass');
+      const consume = consumeRows();
+      const baseline = consume.reduce((s,r) => s + Number(r.baseline || 0), 0);
+      const current = consume.reduce((s,r) => s + Number(r.current || 0), 0);
+      const growth = current - baseline;
+      statCards('consumeStats', [
+        ['总基线消费', money(baseline)], ['总当前消费', money(current)], ['总增长金额', `↑ ${money(growth)}`], ['平均增长率', percent(baseline ? growth / baseline : 0)]
+      ], 'black-glass');
+      document.getElementById('heroAccountScore').textContent = money(aRank.reduce((s,r) => s + r.score, 0));
+      document.getElementById('heroConsumeGrowth').textContent = `↑ ${money(growth)}`;
+      document.getElementById('heroPeople').textContent = people;
+      document.getElementById('dividerGrowth').textContent = `↑ ${money(growth)}`;
+    }
+
+    function statCards(id, rows, cls) {
+      document.getElementById(id).innerHTML = rows.map(([label, value]) => `
+        <div class="${cls} rounded-lg p-5 shadow-glow">
+          <p class="text-sm text-slate-300">${label}</p>
+          <p class="mt-3 text-3xl font-black gold-text num-rise">${value}</p>
+        </div>`).join('');
+    }
+
+    function medal(i) {
+      const cls = ['bg-gold text-navy','bg-slate-200 text-slate-900','bg-[#c0844a] text-white'][i - 1] || 'bg-white/10 text-slate-200';
+      return `<span class="inline-flex h-7 min-w-7 items-center justify-center rounded-full px-2 font-black ${cls}">${i}</span>`;
+    }
+
+    function renderRanks() {
+      document.getElementById('accountRankBody').innerHTML = accountRank().map((r,i) => `
+        <tr class="border-t border-white/[0.08] ${i < 3 ? `rank-${i+1}` : ''}">
+          <td class="p-3">${medal(i+1)}</td><td class="p-3 font-semibold">${r.optimizer}</td><td class="p-3">${r.unit}</td>
+          <td class="p-3">${r.text}</td><td class="p-3">${r.missed}</td><td class="p-3">${r.full}</td><td class="p-3 font-black text-gold">${r.score}</td>
+        </tr>`).join('');
+      document.getElementById('consumeRankBody').innerHTML = consumeRank().map((r,i) => `
+        <tr class="border-t border-white/[0.08] ${i < 3 ? `rank-${i+1}` : ''}">
+          <td class="p-3">${medal(i+1)}</td><td class="p-3 font-semibold">${r.optimizer}</td><td class="p-3">${r.unit}</td>
+          <td class="p-3">${money(r.baseline)}</td><td class="p-3">${money(r.current)}</td><td class="p-3 font-black text-gold">↑ ${money(r.growth)}</td><td class="p-3 text-gold">${percent(r.rate)}</td>
+        </tr>`).join('');
+      document.getElementById('sortAmountBtn').className = `rounded px-3 py-2 text-sm font-semibold ${consumeSort === 'amount' ? 'bg-gold text-graphite' : 'text-slate-300'}`;
+      document.getElementById('sortRateBtn').className = `rounded px-3 py-2 text-sm font-semibold ${consumeSort === 'rate' ? 'bg-gold text-graphite' : 'text-slate-300'}`;
+    }
+
+    function countBy(rows, key) {
+      const map = new Map();
+      rows.forEach(r => {
+        const v = r[key] || '未填写';
+        map.set(v, (map.get(v) || 0) + 1);
+      });
+      return [...map.entries()].map(([name,value]) => ({ name, value })).sort((a,b) => b.value - a.value);
+    }
+    function sumBy(rows, key, val) {
+      const map = new Map();
+      rows.forEach(r => map.set(r[key] || '未填写', (map.get(r[key] || '未填写') || 0) + Number(r[val] || 0)));
+      return [...map.entries()].map(([name,value]) => ({ name, value })).sort((a,b) => b.value - a.value);
+    }
+    function chart(id, option) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      if (!window.echarts) {
+        renderFallbackChart(el, option);
+        return;
+      }
+      try {
+        const instance = echarts.getInstanceByDom(el) || echarts.init(el);
+        instance.setOption({ textStyle: { color: '#dbe7f5' }, color: ['#f6c85f','#6ea8fe','#94d2bd','#d9a066','#c9d1d9'], ...option }, true);
+        instance.resize();
+      } catch (error) {
+        renderFallbackChart(el, option);
+      }
+    }
+    function renderFallbackChart(el, option) {
+      const series = option.series?.[0] || {};
+      let rows = [];
+      if (series.type === 'pie') {
+        rows = (series.data || []).map(item => ({ name: item.name, value: Number(item.value || 0) }));
+      } else if (series.type === 'line') {
+        const names = option.xAxis?.data || [];
+        rows = (series.data || []).map((value, index) => ({ name: names[index] || `阶段${index + 1}`, value: Number(value || 0) }));
+      } else {
+        const names = option.yAxis?.type === 'category' ? option.yAxis.data : option.xAxis?.data;
+        rows = (series.data || []).map((value, index) => ({ name: names?.[index] || `项目${index + 1}`, value: Number(value || 0) }));
+      }
+      const max = Math.max(...rows.map(row => Math.abs(row.value)), 1);
+      el.innerHTML = `<div class="flex h-full flex-col justify-center gap-3 p-2">
+        ${rows.length ? rows.slice(0, 8).map(row => {
+          const width = Math.max(4, Math.round(Math.abs(row.value) / max * 100));
+          return `<div>
+            <div class="mb-1 flex items-center justify-between gap-3 text-xs text-slate-200">
+              <span class="truncate">${row.name}</span>
+              <b class="text-gold">${money(row.value)}</b>
+            </div>
+            <div class="h-3 overflow-hidden rounded bg-white/10">
+              <div class="h-full rounded bg-gold" style="width:${width}%"></div>
+            </div>
+          </div>`;
+        }).join('') : '<div class="text-sm text-slate-400">暂无可展示数据</div>'}
+      </div>`;
+    }
+    function ensureChartsReady() {
+      if (window.echarts) {
+        renderCharts();
+        return;
+      }
+      const urls = [
+        'https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js',
+        'https://unpkg.com/echarts@5.5.1/dist/echarts.min.js',
+        'https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.1/echarts.min.js'
+      ];
+      let index = 0;
+      const loadNext = () => {
+        if (window.echarts) {
+          renderCharts();
+          return;
+        }
+        if (index >= urls.length) return;
+        const script = document.createElement('script');
+        script.src = urls[index++];
+        script.onload = () => renderCharts();
+        script.onerror = loadNext;
+        document.head.appendChild(script);
+      };
+      loadNext();
+      setTimeout(() => window.echarts && renderCharts(), 800);
+      setTimeout(() => window.echarts && renderCharts(), 1800);
+    }
+    function renderCharts() {
+      const accounts = getAccounts();
+      const consumes = consumeRows();
+      const axis = { axisLabel: { color: '#cbd5e1' }, axisLine: { lineStyle: { color: '#334155' } }, splitLine: { lineStyle: { color: 'rgba(255,255,255,.08)' } } };
+      const pieBase = data => ({ tooltip: {}, series: [{ type: 'pie', radius: ['42%','70%'], data, label: { color: '#dbe7f5' } }] });
+      chart('chartAccountReason', { tooltip: {}, xAxis: { type: 'value', ...axis }, yAxis: { type: 'category', data: countBy(accounts,'openReason').slice(0,6).map(x=>x.name), ...axis }, series: [{ type: 'bar', data: countBy(accounts,'openReason').slice(0,6).map(x=>x.value) }] });
+      chart('chartAccountPain', pieBase(countBy(accounts,'pain').slice(0,6)));
+      chart('chartAccountIndustry', pieBase(countBy(accounts,'industry1').slice(0,6)));
+      chart('chartAccountUnit', { tooltip: {}, xAxis: { type: 'category', data: countBy(accounts,'unit').map(x=>x.name), ...axis }, yAxis: { type: 'value', ...axis }, series: [{ type: 'bar', data: countBy(accounts,'unit').map(x=>x.value) }] });
+      chart('chartAccountType', pieBase(countBy(accounts,'openType')));
+      chart('chartConsumeUnit', { tooltip: {}, xAxis: { type: 'value', ...axis }, yAxis: { type: 'category', data: sumBy(consumes,'unit','growth').map(x=>x.name), ...axis }, series: [{ type: 'bar', data: sumBy(consumes,'unit','growth').map(x=>x.value) }] });
+      chart('chartConsumeTop', { tooltip: {}, xAxis: { type: 'value', ...axis }, yAxis: { type: 'category', data: consumes.sort((a,b)=>b.growth-a.growth).slice(0,8).map(x=>x.optimizer), ...axis }, series: [{ type: 'bar', data: consumes.sort((a,b)=>b.growth-a.growth).slice(0,8).map(x=>x.growth) }] });
+      const buckets = ['<20%','20%-40%','40%-60%','60%+'].map(name => ({ name, value: 0 }));
+      consumes.forEach(r => { const p = r.rate; buckets[p < .2 ? 0 : p < .4 ? 1 : p < .6 ? 2 : 3].value++; });
+      chart('chartConsumeRate', pieBase(buckets));
+      chart('chartConsumeStructure', pieBase([{ name: '基线消费', value: consumes.reduce((s,r)=>s+r.baseline,0) }, { name: '增长金额', value: consumes.reduce((s,r)=>s+r.growth,0) }]));
+      const totalGrowth = consumes.reduce((s,r)=>s+r.growth,0);
+      chart('chartConsumeTrend', { tooltip: {}, xAxis: { type: 'category', data: ['5/18','5/25','6/01','6/08','6/15','6/22','6/30'], ...axis }, yAxis: { type: 'value', ...axis }, series: [{ type: 'line', smooth: true, areaStyle: {}, data: [0,.16,.31,.48,.66,.82,1].map(x=>Math.round(totalGrowth*x)) }] });
+    }
+
+    function renderAll() { document.getElementById('updatedAt').textContent = state.updatedAt || today(); renderStats(); renderRanks(); renderCharts(); if (document.getElementById('adminDrawer').classList.contains('open')) renderAdmin(); }
+    function setConsumeSort(type) { consumeSort = type; renderRanks(); }
+
+    function openReportModal() { document.getElementById('reportModal').classList.add('open'); }
+    function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+    async function submitReport(e) {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(e.target).entries());
+      await saveAccounts([{ id: uid(), time: today(), ...data }, ...getAccounts()]);
+      e.target.reset();
+      closeModal('reportModal');
+      location.hash = '#accountRank';
+    }
+
+    function openAdmin(type) {
+      pendingAdmin = type;
+      document.getElementById('passwordTitle').textContent = type === 'account' ? '账户数赛道管理员验证' : '消费增长赛道管理员验证';
+      document.getElementById('adminPassword').value = '';
+      document.getElementById('passwordError').classList.add('hidden');
+      document.getElementById('passwordModal').classList.add('open');
+    }
+    function verifyAdmin() {
+      if (document.getElementById('adminPassword').value !== ADMIN_PASSWORD) {
+        document.getElementById('passwordError').classList.remove('hidden');
+        return;
+      }
+      activeAdmin = pendingAdmin;
+      closeModal('passwordModal');
+      renderAdmin();
+      document.getElementById('adminDrawer').classList.add('open');
+    }
+    function closeDrawer() { document.getElementById('adminDrawer').classList.remove('open'); }
+
+    function renderAdmin() {
+      document.getElementById('drawerKicker').textContent = activeAdmin === 'account' ? '账户数赛道后台' : '消费增长赛道后台';
+      document.getElementById('drawerTitle').textContent = activeAdmin === 'account' ? '当前提报数据明细' : '消费增长数据明细';
+      renderAdminStats();
+      renderFilters();
+      renderAdminTable();
+    }
+    function renderAdminStats() {
+      if (activeAdmin === 'account') {
+        const rows = getAccounts();
+        statCards('adminStats', [['总提报数', rows.length], ['文字版数', rows.filter(r=>r.openType==='文字版').length], ['漏接数', rows.filter(r=>r.openType==='漏接').length], ['全接数', rows.filter(r=>r.openType==='全接').length]], 'black-glass');
+      } else {
+        const rows = consumeRows();
+        const b = rows.reduce((s,r)=>s+r.baseline,0), c = rows.reduce((s,r)=>s+r.current,0), g = c-b;
+        statCards('adminStats', [['总基线消费', money(b)], ['总当前消费', money(c)], ['总增长金额', money(g)], ['平均增长率', percent(b ? g / b : 0)]], 'black-glass');
+      }
+    }
+    function renderFilters() {
+      const industry = document.getElementById('filterIndustry'), type = document.getElementById('filterType'), unit = document.getElementById('filterUnit');
+      const keep = [industry.value, type.value, unit.value];
+      const rows = activeAdmin === 'account' ? getAccounts() : getConsumes();
+      industry.innerHTML = '<option value="">全部行业</option>' + [...new Set(rows.map(r=>r.industry1).filter(Boolean))].map(v=>`<option>${v}</option>`).join('');
+      type.innerHTML = '<option value="">全部开通类型</option>' + ['文字版','漏接','全接'].map(v=>`<option>${v}</option>`).join('');
+      unit.innerHTML = '<option value="">全部运营单位</option>' + [...new Set(rows.map(r=>r.unit).filter(Boolean))].map(v=>`<option>${v}</option>`).join('');
+      industry.disabled = activeAdmin !== 'account'; type.disabled = activeAdmin !== 'account';
+      [industry.value, type.value, unit.value] = keep;
+    }
+    function adminFilteredRows() {
+      const q = document.getElementById('adminSearch').value.trim().toLowerCase();
+      const industry = document.getElementById('filterIndustry').value, type = document.getElementById('filterType').value, unit = document.getElementById('filterUnit').value;
+      const rows = activeAdmin === 'account' ? getAccounts() : consumeRows();
+      return rows.filter(r => {
+        const hay = [r.optimizer,r.customerUid,r.customerName,r.unit].join(' ').toLowerCase();
+        return (!q || hay.includes(q)) && (!industry || r.industry1 === industry) && (!type || r.openType === type) && (!unit || r.unit === unit);
+      });
+    }
+    function renderAdminTable() {
+      const fields = activeAdmin === 'account'
+        ? ['time','optimizer','unit','customerName','customerUid','industry1','industry2','openType','openReason','pushReason','pain','quote']
+        : ['optimizer','unit','baseline','current','growth','rate'];
+      const labels = activeAdmin === 'account'
+        ? ['提报时间','优化师','运营单位','客户名称','客户UID','一级行业','二级行业','开通类型','开通原因','推动原因','客户痛点','客户原话']
+        : ['优化师','运营单位','基线消费','当前消费','增长金额','增长率'];
+      document.getElementById('adminHead').innerHTML = `<tr>${labels.map(x=>`<th class="p-3 whitespace-nowrap">${x}</th>`).join('')}<th class="p-3">操作</th></tr>`;
+      document.getElementById('adminBody').innerHTML = adminFilteredRows().map(r => `
+        <tr class="border-t border-white/[0.08]">
+          ${fields.map(f => `<td class="max-w-[220px] truncate p-3">${f === 'rate' ? percent(r[f]) : ['baseline','current','growth'].includes(f) ? money(r[f]) : (r[f] || '')}</td>`).join('')}
+          <td class="whitespace-nowrap p-3"><button onclick="editRow('${r.id}')" class="rounded bg-gold/15 px-3 py-2 text-gold">编辑</button> <button onclick="deleteRow('${r.id}')" class="rounded bg-red-400/15 px-3 py-2 text-red-200">删除</button></td>
+        </tr>`).join('');
+    }
+    function editRow(id) {
+      editing = { id, type: activeAdmin };
+      const row = (activeAdmin === 'account' ? getAccounts() : getConsumes()).find(r => r.id === id);
+      const fields = activeAdmin === 'account'
+        ? [['optimizer','优化师'],['unit','运营单位'],['customerName','客户名称'],['customerUid','客户UID'],['industry1','一级行业'],['industry2','二级行业'],['openType','开通类型'],['openReason','开通原因'],['pushReason','推动原因'],['pain','客户痛点'],['quote','客户原话']]
+        : [['optimizer','优化师'],['unit','运营单位'],['baseline','基线消费'],['current','当前消费']];
+      document.getElementById('editForm').innerHTML = fields.map(([k,l]) => `<label class="text-sm text-slate-300">${l}<input name="${k}" value="${row[k] || ''}" class="field mt-1 w-full"></label>`).join('') + '<button class="rounded bg-gold px-5 py-3 font-black text-graphite md:col-span-2">保存修改</button>';
+      document.getElementById('editForm').onsubmit = saveEdit;
+      document.getElementById('editModal').classList.add('open');
+    }
+    async function saveEdit(e) {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(e.target).entries());
+      if (editing.type === 'account') await saveAccounts(getAccounts().map(r => r.id === editing.id ? { ...r, ...data } : r));
+      else await saveConsumes(getConsumes().map(r => r.id === editing.id ? { ...r, ...data, baseline: Number(data.baseline || 0), current: Number(data.current || 0) } : r));
+      closeModal('editModal');
+    }
+    async function deleteRow(id) {
+      if (!confirm('确认删除这条数据？')) return;
+      if (activeAdmin === 'account') await saveAccounts(getAccounts().filter(r => r.id !== id));
+      else await saveConsumes(getConsumes().filter(r => r.id !== id));
+    }
+
+    function handleImport(e) {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = ev => {
+        const wb = XLSX.read(new Uint8Array(ev.target.result), { type: 'array' });
+        const rows = XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]]);
+        if (activeAdmin === 'account') {
+          const imported = rows.flatMap(row => normalizeAccountImport(row));
+          saveAccounts([...imported, ...getAccounts()]);
+        } else {
+          const imported = rows.map(row => ({
+            id: uid(),
+            optimizer: row['优化师'] || row.optimizer || '',
+            unit: row['运营单位'] || row.unit || '',
+            baseline: Number(row['基线消费'] || row.baseline || 0),
+            current: Number(row['当前消费'] || row.current || 0)
+          })).filter(r => r.optimizer);
+          saveConsumes(imported);
+        }
+        e.target.value = '';
+      };
+      reader.readAsArrayBuffer(file);
+    }
+    function normalizeAccountImport(row) {
+      const base = {
+        time: today(),
+        optimizer: row['优化师'] || row.optimizer || '',
+        unit: row['运营单位'] || row.unit || '',
+        customerName: row['客户名称'] || row.customerName || '',
+        customerUid: row['客户UID'] || row.customerUid || '',
+        industry1: row['一级行业'] || row.industry1 || '',
+        industry2: row['二级行业'] || row.industry2 || '',
+        openReason: row['开通原因'] || row.openReason || '',
+        pushReason: row['推动原因'] || row.pushReason || '',
+        pain: row['客户痛点'] || row.pain || '',
+        quote: row['客户原话'] || row.quote || ''
+      };
+      const explicit = row['开通类型'] || row.openType;
+      if (explicit) return [{ id: uid(), ...base, openType: explicit }];
+      const counts = [['文字版', row['文字版数量'] || 0], ['漏接', row['漏接数量'] || 0], ['全接', row['全接数量'] || 0]];
+      return counts.flatMap(([openType, count]) => Array.from({ length: Number(count || 0) }, (_, i) => ({ id: uid(), ...base, customerUid: `${base.customerUid || 'IMPORT'}-${openType}-${i+1}`, openType })));
+    }
+
+    function exportCurrent(kind) {
+      let rows = [], name = '';
+      if (activeAdmin === 'account') {
+        if (kind === 'detail') { rows = getAccounts(); name = 'account_detail.xlsx'; }
+        if (kind === 'rank') { rows = accountRank(); name = 'account_rank.xlsx'; }
+        if (kind === 'insight') { rows = [...countBy(getAccounts(),'openReason').map(x=>({类型:'开通原因', ...x})), ...countBy(getAccounts(),'pain').map(x=>({类型:'客户痛点', ...x})), ...countBy(getAccounts(),'industry1').map(x=>({类型:'行业分布', ...x}))]; name = 'account_insight.xlsx'; }
+      } else {
+        if (kind === 'detail') { rows = consumeRows(); name = 'consume_detail.xlsx'; }
+        if (kind === 'rank') { rows = consumeRank(); name = 'consume_rank.xlsx'; }
+        if (kind === 'insight') { rows = [...sumBy(consumeRows(),'unit','growth').map(x=>({类型:'运营单位增长', ...x})), ...consumeRank().slice(0,20).map(x=>({类型:'TOP增长优化师', name:x.optimizer, value:x.growth}))]; name = 'consume_insight.xlsx'; }
+      }
+      const ws = XLSX.utils.json_to_sheet(rows);
+      const wb = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
+      XLSX.writeFile(wb, name);
+    }
+    function exportPublishHtml() {
+      const publishData = {
+        updatedAt: today(),
+        accounts: getAccounts(),
+        consumes: getConsumes()
+      };
+      let html = document.documentElement.outerHTML;
+      html = html.replace(/<script id="publishData" type="application\/json">[\s\S]*?<\/script>\s*/g, '');
+      html = html.replace(/<script>\s*window\.__B2B_PUBLISH_DATA__[\s\S]*?<\/script>\s*/g, '');
+      const dataScript = `</body></html>
